@@ -1,3 +1,3 @@
 spec_version: 0.1.4
 indicators:
-  host_cpu: metricSelector=builtin:host.cpu.usage:merge(0):avg:names&entitySelector=entityId(ip-172-31-4-106.ec2.internal)
+  host_cpu: metricSelector=builtin:host.cpu.usage:filter(and(in("dt.entity.host",entitySelector("type(host),tag(~"host:hosta~")")))):splitBy("dt.entity.host"):avg:auto:sort(value(avg,descending)):limit(10)
