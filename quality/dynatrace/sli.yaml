@@ -1,0 +1,4 @@
+spec_version: 0.1.4
+indicators:
+  host_cpu_ip-172-31-4-106.ec2.internal: MV2;Percent;metricSelector=builtin:host.cpu.usage:avg:names:filter(eq(dt.entity.host,ip-172-31-4-106.ec2.internal))
+  host_cpu_ip-172-31-9-31.ec2.internal: MV2;Percent;metricSelector=builtin:host.cpu.usage:avg:names:filter(eq(dt.entity.host,ip-172-31-9-31.ec2.internal))
