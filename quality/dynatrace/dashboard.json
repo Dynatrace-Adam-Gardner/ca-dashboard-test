@@ -37,10 +37,28 @@
       "queries": [
         {
           "id": "A",
-          "metric": "",
+          "metric": "builtin:host.cpu.usage",
           "spaceAggregation": "AVG",
           "timeAggregation": "DEFAULT",
-          "splitBy": null
+          "splitBy": [],
+          "filterBy": {
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.host",
+                "filterType": "NAME",
+                "filterOperator": "OR",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "ip-172-31-4-106.ec2.internal",
+                    "evaluator": "IN"
+                  }
+                ]
+              }
+            ],
+            "criteria": []
+          }
         }
       ],
       "assignedEntities": null,
