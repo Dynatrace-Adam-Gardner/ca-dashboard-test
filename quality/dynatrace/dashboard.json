@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "configurationVersions": [
+      5
+    ],
+    "clusterVersion": "1.226.21.20210831-165523"
+  },
+  "id": "51ea6fe1-d874-4916-8a96-80df62baef4e",
+  "dashboardMetadata": {
+    "name": "dashboard-ca",
+    "shared": false,
+    "owner": "adam.gardner@dynatrace.com",
+    "sharingDetails": {
+      "linkShared": false,
+      "published": false
+    },
+    "tags": null
+  },
+  "tiles": [
+    {
+      "name": "sli=host_cpu",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "query": "",
+      "type": "",
+      "customName": "Data explorer results",
+      "markdown": "",
+      "bounds": {
+        "top": 38,
+        "left": 38,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": ""
+      },
+      "queries": [
+        {
+          "id": "A",
+          "metric": "builtin:host.cpu.usage",
+          "spaceAggregation": "AVG",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "dt.entity.host"
+          ],
+          "filterBy": {
+            "filterOperator": "",
+            "nestedFilters": [],
+            "criteria": []
+          }
+        }
+      ],
+      "assignedEntities": null,
+      "filterConfig": {
+        "type": "",
+        "customName": "",
+        "defaultName": "",
+        "chartConfig": {
+          "legendShown": false,
+          "type": "",
+          "series": null,
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": null
+      }
+    }
+  ]
+}
