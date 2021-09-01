@@ -6,7 +6,18 @@ comparison:
   number_of_comparison_results: 1
   aggregate_function: avg
 objectives:
-- sli: host_cpu
+- sli: host_cpu_ip-172-31-9-31.ec2.internal
+  displayName: ""
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
+- sli: host_cpu_ip-172-31-4-106.ec2.internal
+  displayName: ""
+  pass: []
+  warning: []
+  weight: 1
+  key_sli: false
 total_score:
   pass: 90%
   warning: 75%
