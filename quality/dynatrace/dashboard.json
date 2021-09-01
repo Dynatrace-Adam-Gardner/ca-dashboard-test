@@ -28,8 +28,8 @@
       "bounds": {
         "top": 38,
         "left": 38,
-        "width": 304,
-        "height": 304
+        "width": 722,
+        "height": 228
       },
       "tileFilter": {
         "timeframe": ""
@@ -44,8 +44,21 @@
             "dt.entity.host"
           ],
           "filterBy": {
-            "filterOperator": "",
-            "nestedFilters": [],
+            "filterOperator": "AND",
+            "nestedFilters": [
+              {
+                "filter": "dt.entity.host",
+                "filterType": "TAG",
+                "filterOperator": "OR",
+                "nestedFilters": [],
+                "criteria": [
+                  {
+                    "value": "host:hosta",
+                    "evaluator": "IN"
+                  }
+                ]
+              }
+            ],
             "criteria": []
           }
         }
