@@ -1,4 +1,4 @@
 ---
 spec_version: '0.1.0'
 dashboard: 51ea6fe1-d874-4916-8a96-80df62baef4e
-dtCreds: dynatrace-api-token-jao
+dtCreds: dynatrace-jao
