@@ -37,30 +37,10 @@
       "queries": [
         {
           "id": "A",
-          "metric": "builtin:host.cpu.usage",
+          "metric": "",
           "spaceAggregation": "AVG",
           "timeAggregation": "DEFAULT",
-          "splitBy": [
-            "dt.entity.host"
-          ],
-          "filterBy": {
-            "filterOperator": "AND",
-            "nestedFilters": [
-              {
-                "filter": "dt.entity.host",
-                "filterType": "TAG",
-                "filterOperator": "OR",
-                "nestedFilters": [],
-                "criteria": [
-                  {
-                    "value": "host:hosta",
-                    "evaluator": "IN"
-                  }
-                ]
-              }
-            ],
-            "criteria": []
-          }
+          "splitBy": null
         }
       ],
       "assignedEntities": null,
