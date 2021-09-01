@@ -5,7 +5,8 @@ comparison:
   include_result_with_score: pass
   number_of_comparison_results: 1
   aggregate_function: avg
-objectives: []
+objectives:
+- sli: host_cpu
 total_score:
   pass: 90%
   warning: 75%
